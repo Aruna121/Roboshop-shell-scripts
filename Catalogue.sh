@@ -36,5 +36,5 @@ systemctl daemon-reload catalogue &>>${LOG_FILE}
 systemctl enable catalogue &>>${LOG_FILE}
 
 echo "start catalogue service"
-systemctl restart catalogue &>>${LOG_FILE}
+systemctl start catalogue &>>${LOG_FILE}
 echo status = $?
