@@ -9,7 +9,7 @@ yum install nodejs -y &>>${LOG_FILE}
 echo status = $?
 
 echo "Add Roboshop Application User"
-useradd roboshop&>>${LOG_FILE}
+useradd roboshop &>>${LOG_FILE}
 echo status = $?
 
 echo "Download Catalogue Application code"
