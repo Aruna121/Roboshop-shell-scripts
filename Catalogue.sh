@@ -24,6 +24,7 @@ unzip /tmp/catalogue.zip &>>${LOG_FILE}
 echo status = $?
 
 mv catalogue-main catalogue
+
 cd /home/roboshop/catalogue
 
 echo "Install Nodejs dependencies"
