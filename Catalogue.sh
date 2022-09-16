@@ -5,15 +5,15 @@ curl -sL https://rpm.nodesource.com/setup_lts.x | bash &>>${LOG_FILE}
 echo status = $?
 
 echo "Install NodeJS"
-# yum install nodejs -y &>>${LOG_FILE}
+yum install nodejs -y &>>${LOG_FILE}
 echo status = $?
 
 echo "Add Roboshop Application User"
-# useradd roboshop&>>${LOG_FILE}
+useradd roboshop&>>${LOG_FILE}
 echo status = $?
 
 echo "Download Catalogue Application code"
-$ curl -s -L -o /tmp/catalogue.zip "https://github.com/roboshop-devops-project/catalogue/archive/main.zip" &>>${LOG_FILE}
+curl -s -L -o /tmp/catalogue.zip "https://github.com/roboshop-devops-project/catalogue/archive/main.zip" &>>${LOG_FILE}
 echo status = $?
 
 echo "Extract Application Catalogue code"
